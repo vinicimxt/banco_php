@@ -1,0 +1,28 @@
+create database bank;
+
+use bank;
+
+create table login (
+id int not null primary key auto_increment,
+usuario varchar(100) not null unique,
+senha varchar(20) not null 
+);
+
+INSERT INTO login ( id,usuario,senha)
+values ("1","vinicius","patolino123"); 
+
+
+select *from login;
+desc login;
+show create table login;
+
+create table pessoa (
+id_pessoa int  not null,
+nome varchar (40) not null,
+idade int (3),
+matricula int (6) not null,
+rg int(11) not null
+);
+
+drop database bank;
+show tables;
