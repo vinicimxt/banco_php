@@ -1,14 +1,10 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=bank";
-$username = "root";
-$password = "";
-$pdo = new PDO($dsn, $username, $password);
 
-$stmt = $pdo->query("SELECT * FROM login");
-while ($linha = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    echo $linha['usuario'] . " - " . $linha['senha'] . "<br>";
-}
+
+
+
+
 
 
 /*$nome = "Maria";
